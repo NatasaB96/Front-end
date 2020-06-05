@@ -101,7 +101,6 @@ nav ul li a {
 nav ul li a:hover{
     color: var(--svetlozuta);
     transition: var(--transition);
-    
 }
 
 header img{
