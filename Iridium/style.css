@@ -63,7 +63,6 @@ h5{
 
 nav{
     padding-bottom: 150px;
-    
 }
 
 nav ul li{
@@ -81,7 +80,6 @@ nav ul li a:hover{
     color: var(--orange);
     transition: .3s ease;
     cursor: pointer;
-
 }
 /******************
 first
@@ -187,7 +185,6 @@ second
     text-transform: uppercase;
     font-size: 1.5rem;
     padding-bottom: 20px;
-     
 }
 
 .second p{
@@ -201,21 +198,18 @@ footer
 footer{
     background: var(--darkgray);
     padding: var(--padding);
-    
 }
 
 footer article{
     width: 33%;
     float: left;
     padding: 20px;
-    
 }
 
 footer h4{
     font-size: 1.7rem;
     color: var(--white);
     padding-bottom: 30px;
-    
 }
 
 footer ul li{
@@ -226,14 +220,12 @@ footer ul li{
 
 footer a{
     color: var(--gray);
-    
 }
 
 footer a:hover{
     color: var(--orange);
     transition: .4s ease;   
 }
-
 
 /*Bootom bar */
 
