@@ -1,0 +1,338 @@
+/******************************
+variables
+******************************/
+/******************************
+mixin
+******************************/
+/******************************
+basic styles
+******************************/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+body {
+  font-size: 16px;
+  color: #0b193c;
+  font-family: "Montserrat", sans-serif;
+  line-height: 1.5; }
+
+ul {
+  list-style: none; }
+
+a {
+  text-decoration: none;
+  color: white; }
+  a:hover {
+    color: #f91257;
+    transition: 0.3s ease; }
+
+.container {
+  width: 90%;
+  margin: auto; }
+
+h2 {
+  font-size: 3rem;
+  line-height: 1.1; }
+
+.container {
+  width: 80%;
+  margin: auto; }
+
+@media (max-width: 768px) {
+  h2::after {
+    margin-bottom: 20px; } }
+
+/******************************
+nav + header
+******************************/
+nav {
+  background: #09192c;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 20px;
+  align-items: center; }
+  @media (max-width: 768px) {
+    nav {
+      justify-content: center;
+      flex-direction: column; } }
+  nav .logo {
+    font-size: 1.4rem;
+    font-weight: 800; }
+    nav .logo span {
+      color: #f91257; }
+  nav ul {
+    display: flex;
+    flex-wrap: wrap; }
+    nav ul li {
+      margin-right: 40px; }
+
+header {
+  background: #0b193c;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center; }
+  header hgroup {
+    flex: 5;
+    margin-left: 20px; }
+    @media (max-width: 768px) {
+      header hgroup {
+        padding: 80px 0;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        align-items: center; } }
+    header hgroup h1 {
+      color: white;
+      font-size: 3rem; }
+      header hgroup h1 span {
+        color: #f91257; }
+    header hgroup p {
+      color: white; }
+    header hgroup button {
+      padding: 15px 30px;
+      color: white;
+      background: #f91257;
+      text-transform: uppercase;
+      font-size: 1.1;
+      border-radius: 50px;
+      border: none;
+      margin-top: 20px; }
+      header hgroup button:hover {
+        transition: 0.3s ease;
+        cursor: pointer; }
+  header img {
+    flex: 7; }
+
+/******************************
+footer
+******************************/
+footer {
+  padding: 80px 0;
+  background: #09192c;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  color: white;
+  justify-content: center;
+  align-items: center; }
+  footer .logo {
+    color: white;
+    font-weight: 700;
+    font-size: 1.5rem;
+    flex: 1; }
+    footer .logo span {
+      color: #f91257; }
+  footer p {
+    margin: 10px 0;
+    font-size: .9rem;
+    flex: 1; }
+  footer ul {
+    flex: 1; }
+    footer ul a {
+      margin: 0 10px; }
+
+/******************************
+I N D E X
+******************************/
+/* Section One */
+.one {
+  padding: 80px 0;
+  color: white;
+  display: flex;
+  flex-wrap: wrap;
+  color: #0b193c;
+  justify-content: space-between; }
+  .one .col {
+    flex: 0 0 49%; }
+    @media (max-width: 768px) {
+      .one .col {
+        flex: 0 0 100%; } }
+    .one .col p {
+      line-height: 1.5; }
+    .one .col button {
+      padding: 15px 30px;
+      color: white;
+      background: #f91257;
+      text-transform: uppercase;
+      font-size: 1.1;
+      border-radius: 50px;
+      border: none;
+      margin-top: 20px; }
+      .one .col button:hover {
+        transition: 0.3s ease;
+        cursor: pointer; }
+  @media (max-width: 768px) {
+    .one .col:first-child {
+      margin-bottom: 20px; } }
+
+/******************************
+H O W    I T  W O R K S
+******************************/
+.how_it_works {
+  color: white;
+  background: #0b193c;
+  padding: 80px 0; }
+  .how_it_works .row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; }
+    .how_it_works .row .col {
+      flex: 0 0 31%; }
+      @media (max-width: 768px) {
+        .how_it_works .row .col {
+          flex: 0 0 100%; } }
+      .how_it_works .row .col i {
+        color: #f91257;
+        font-size: 3rem;
+        margin: 10px 0; }
+        @media (max-width: 768px) {
+          .how_it_works .row .col i {
+            font-size: 4rem; } }
+      .how_it_works .row .col h4 {
+        font-size: 1.2rem; }
+        @media (max-width: 768px) {
+          .how_it_works .row .col h4 {
+            font-size: 1.5rem; } }
+      .how_it_works .row .col p {
+        margin: 10px 0; }
+        @media (max-width: 768px) {
+          .how_it_works .row .col p {
+            font-size: 1.2rem; } }
+
+/* Artists */
+.artists {
+  padding: 80px 0; }
+  .artists hgroup {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; }
+    @media (max-width: 768px) {
+      .artists hgroup {
+        flex-direction: column; } }
+    .artists hgroup h2 {
+      flex: 0 0 49%;
+      font-size: 2.8rem; }
+      @media (max-width: 768px) {
+        .artists hgroup h2 {
+          margin-bottom: 20px; } }
+  .artists p {
+    flex: 0 0 49%; }
+
+.row {
+  margin-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between; }
+  .row .col {
+    flex: 0 0 22%; }
+    @media (max-width: 768px) {
+      .row .col {
+        flex: 0 0 100%;
+        margin-bottom: 20px; } }
+    .row .col img {
+      width: 100%;
+      border-radius: 20px; }
+    .row .col h5 {
+      text-align: center; }
+      @media (max-width: 768px) {
+        .row .col h5 {
+          font-size: 1.1rem;
+          font-weight: 900; } }
+
+/******************************
+S U B S C R I P T I O N
+******************************/
+.subscription {
+  padding: 80px 0;
+  background: #0b193c;
+  color: white; }
+  .subscription .container {
+    display: flex;
+    flex-wrap: wrap; }
+    .subscription .container .col {
+      flex: 0 0 49%; }
+      @media (max-width: 768px) {
+        .subscription .container .col {
+          flex: 0 0 100%; } }
+      .subscription .container .col h4 {
+        color: #f91257;
+        margin: 10px 0; }
+      .subscription .container .col button {
+        padding: 15px 30px;
+        color: white;
+        background: #f91257;
+        text-transform: uppercase;
+        font-size: 1.1;
+        border-radius: 50px;
+        border: none;
+        margin-top: 20px; }
+        .subscription .container .col button:hover {
+          transition: 0.3s ease;
+          cursor: pointer; }
+    .subscription .container .wrapper {
+      background: linear-gradient(rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2)), #0b193c;
+      padding: 40px;
+      border-radius: 10px;
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: column;
+      align-content: center;
+      line-height: 2; }
+      @media (max-width: 768px) {
+        .subscription .container .wrapper {
+          padding: 50px;
+          margin-top: 20px;
+          line-height: 2.4; } }
+      .subscription .container .wrapper p {
+        color: white; }
+      .subscription .container .wrapper p::before {
+        content: "\f058";
+        font-family: "Font Awesome 5 Free";
+        color: #f91257; }
+
+/*Concept */
+.concept {
+  padding: 80px 0; }
+  .concept hgroup {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; }
+    @media (max-width: 768px) {
+      .concept hgroup {
+        flex-direction: column; } }
+    .concept hgroup h2 {
+      flex: 0 0 49%;
+      font-size: 2.8rem; }
+      @media (max-width: 768px) {
+        .concept hgroup h2 {
+          margin-bottom: 20px; } }
+    .concept hgroup p {
+      flex: 0 0 49%; }
+  .concept .row {
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; }
+    .concept .row .col {
+      flex: 0 0 22%; }
+      @media (max-width: 768px) {
+        .concept .row .col {
+          flex: 0 0 100%; } }
+      .concept .row .col img {
+        width: 100%;
+        border-radius: 50%;
+        margin-bottom: 20px; }
+      .concept .row .col h5 {
+        text-align: center; }
+        @media (max-width: 768px) {
+          .concept .row .col h5 {
+            font-size: 1.1rem;
+            font-weight: 900; } }
+
+/*# sourceMappingURL=style.css.map */
