@@ -1,0 +1,280 @@
+@import url('https://fonts.googleapis.com/css?family=Nunito:300,400,800,900&display=swap');
+:root {
+    --orange: #e24e2a;
+    --brown: #383838; /* rgb(56, 56, 56) */
+    --green: #538d6a;
+    --gray: #ececec;
+    --text: #555555;
+    --white: #fff;
+    --padding:60px 0;
+}
+body {
+    font-family: 'Nunito', sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 1.6;
+}
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+.container{
+    width: 90%;
+    margin: auto;
+    
+}
+
+.container::after{
+    display: block;
+    content: "";
+    clear: both;
+}
+
+hr{
+    background: var(--text);
+    border: none;
+    height: 1px;
+    margin:30px auto 30px auto;
+    width: 90%;  
+}
+
+button{
+    background: var(--green);
+    color: var(--white);
+    border: none;
+    padding: 15px;
+    text-transform: uppercase;
+    font-size: 0.8rem;
+}
+
+button:hover{
+    cursor: pointer;
+    transition: .4s ease-in-out;
+    
+}
+/**************
+nav
+**************/
+
+.logo{
+    font-size: 1.8rem;
+    float: left;   
+    text-decoration: none;
+    border-right: 1px solid var(--gray);
+    padding-right: 10px;
+    color: var(--text);
+    font-weight: 800;
+}
+
+.logo+p{
+    padding-top: 10px;
+    display: inline-block;
+    padding-left: 10px;
+    color: var(--text);
+}
+
+nav{
+    padding: 20px 10px;
+}
+
+nav ul {
+    float: right;
+}
+
+nav ul li{
+    display: inline-block;
+    padding: 5px 5px;
+    background: var(--gray);
+    text-transform: uppercase;
+    float: right;
+    margin: 0 3px;  
+    
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: var(--text);
+}
+
+.active{
+    background: var(--orange);
+}
+
+.active a{
+    color: var(--white);
+}
+
+
+/**************
+header
+**************/
+
+header img{
+    display: block;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 80vh;
+    opacity: 0.8;
+}
+
+/**************
+about
+**************/
+
+.about{
+    background: var(--orange);
+    
+}
+
+.about p{
+    text-align: center;
+    color: var(--white);
+    padding: var(--padding);
+}
+
+/**************
+services
+**************/
+
+.services {
+    background: var(--brown);
+    padding: var(--padding);
+    
+}
+
+.services article{
+    float: left;
+    width: 25%;
+}
+.wrapper{
+    margin: 0 30px;
+    text-align: center;
+}
+
+.wrapper i{
+    font-size: 25px;
+    background: var(--orange);
+    color: var(--white);
+    border-radius: 60%;
+    padding: 20px;
+    margin-bottom: 10px; 
+}
+
+.wrapper h5{
+    color: var(--white);
+    font-size: 1rem;
+}
+
+.wrapper p{
+    color: var(--white);
+    text-align: justify;
+    
+}
+
+/**************
+cta
+**************/
+.call{
+    text-align: center;
+    padding: var(--padding);
+}
+
+.call h5 {
+    text-transform: uppercase;
+    
+}
+
+/**************
+gallery
+**************/
+
+.gallery{
+    background: var(--brown);
+    padding: var(--padding);
+}
+
+.gallery h2{
+    color: var(--white);
+    text-align: center;
+    font-size: 1.7rem;
+}
+
+.gallery article{
+    float: left;
+    width: 25%;
+    padding: 20px 10px 0 10px;
+}
+
+.gallery img{
+    width: 100%;
+}
+/**************
+footer
+**************/
+
+footer{
+    background: var(--green);
+    text-align: center;
+    color: var(--white);
+    padding: 40px 0;
+}
+
+footer p{
+    font-size: 1.1rem;
+}
+
+footer a{
+    text-decoration: none;
+    color: var(--white);
+}
+
+/* Responsive */
+@media(max-width: 768px) {
+    .container{
+        width: 80%
+    }
+    
+    header img {
+        height: 30vh;
+    }
+    
+    nav ul{
+        float: none;
+        margin: 20px 0;
+    }
+    
+    nav ul li {
+        display: block;
+        float: none;
+    }
+    
+    .services article {
+        float: none;
+        width: 100%;
+        margin-bottom: 40px;
+    }
+    
+    .gallery article {
+        float: none;
+        width: 100%;
+    }
+    
+    
+    footer {
+        padding: 20px 0;
+    }
+    
+    footer p{
+        font-size: 0.8rem;
+    }
+    
+    :root{
+        --padding:30px 0;
+    }
+    
+}
