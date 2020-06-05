@@ -1,0 +1,271 @@
+@import url('https://fonts.googleapis.com/css?family=Comfortaa:400,700|Montserrat:300,400&display=swap');
+
+:root {
+    --green: #32b777;
+    --white: #fff;
+    --gray: #555;
+    --lightgray: #ececec;
+    --darkgray: #222;
+}
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body {
+    color: var(--gray);
+    line-height: 1.5;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+}
+h1, h2, h3, h4 {
+    font-family: 'Comfortaa', cursive;
+}
+
+.container{
+    width: 70%;
+    margin: auto;
+}
+
+.container::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+
+/* Header */
+
+header {
+    text-align: center;
+    background-image: linear-gradient(rgba(0,0,0,.7),rgba(0,0,0,.7)),url(img/horiznos-header.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 30px 0 190px 0;
+    color: var(--white);
+}
+
+header .logo{
+    color: var(--white);
+    font-size: 2.1rem;
+    text-transform: uppercase;
+    font-family: 'Comfortaa', cursive;
+    font-weight: 700;
+    text-decoration: none;  
+}
+
+header nav ul li{
+    display: inline-block;
+    padding: 0px 30px; 
+}
+
+header nav ul li a{
+    text-decoration: none;
+    font-size: 1.2rem;
+    color: var(--white);
+}
+    
+header h1{
+    padding: 120px 0;
+    font-size: 3rem;
+}
+
+header p{
+    padding: 20px 120px;
+}
+
+button{
+    background: var(--green);
+    padding: 10px 50px;
+    border-radius: 20px;
+    border: none;
+    color: var(--white);
+    font-size: 30px;
+}
+
+button:hover{
+    background: var(--white);
+    color: var(--gray);
+    cursor:pointer;
+    transition: .4s ease-in-out;
+}
+
+/* One */
+
+.one{
+    
+    padding: 80px 0;
+    background: var(--lightgray); 
+}
+
+.one h2{
+    text-align: center;
+    font-size: 2.5rem;
+}
+
+.one h2 + p{
+    font-size: 1.2rem;
+    padding: 30px;
+    text-align: center;
+}
+
+.one .col{
+    float: left;
+    width: 33%;
+}
+
+.one .col img{
+    width: 100%;
+}
+
+.one .col div{
+    margin: 20px;
+}
+
+/*Two */
+
+.two{
+    padding: 70px 0;
+}
+.two h2{
+    font-size: 2.6rem;
+    text-align: center;
+}
+
+.two h2 + p {
+    text-align: center;
+    font-size: 1.2rem;
+    padding-bottom: 30px; 
+}
+
+.two .row div{
+    width:50%;
+    float:left;
+}
+
+.two i{
+    font-size: 40px;
+    float:left;
+    margin: 0 20px 0 0;
+    display: inline-block;
+    background: var(--green);
+    color: var(--white);
+    border-radius: 5px;
+    padding: 20px;
+}
+
+.two h4{
+    font-size: 1.4rem;
+}
+
+.two p{
+    padding: 0 30px 10px 0;
+}
+
+/* Footer */
+
+footer{
+    padding: 100px 0;
+    background: var(--darkgray);
+    color: var(--white);
+    line-height: 1.8;
+}
+
+footer .col{
+    float: left;
+    width: 33%;
+}
+
+footer .col:nth-child(2){
+    text-indent: 100px;
+    
+}
+footer .col:nth-child(2) li{
+     list-style: none;  
+}
+
+footer a{
+    color: var(--white);
+    text-decoration: none;
+}
+
+footer .container:nth-child(2){
+    text-align: center;
+}
+
+/* Responsive */
+
+@media(max-width: 768px) {
+    
+    .container{
+        width: 95%;
+    }
+    
+    header .logo {
+        font-size: 1.8rem;
+    }
+        
+    header nav ul li {
+        padding: 10px 5px 5px 5px;
+    }
+    
+    header h1 {
+    padding: 70px 0;
+    font-size: 2rem;
+    }
+    
+    header p {
+    padding: 10px 80px;
+    }
+    
+    button {
+    padding: 5px 40px;
+    margin-top: 10px;
+    }
+    
+    .one h2 {
+    font-size: 2.1rem;
+    }
+    
+    .one h2 + p {
+    font-size: 1rem;
+    padding: 20px;
+    }
+    
+    .one .col {
+    width: 100%;
+    }
+    
+    .two h2 {
+    font-size: 2.3rem;
+    }
+    
+    .two h2 + p {
+    font-size: 1rem;
+    padding-bottom: 30px;
+    padding-top: 10px;
+    }
+    
+    .two .row div {
+    width: 100%;
+    }
+    
+    footer {
+    padding: 80px 0;
+    }
+    
+    footer .col {
+    float: center;
+    width: 100%;
+    padding: 0 0 10px 0;
+    }
+    
+    footer .col:nth-child(2) {
+    text-indent: 0px;
+    }
+    
+    footer .container:nth-child(2){
+        font-size: 0.8rem;
+    }
+    
+}
