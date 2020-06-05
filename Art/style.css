@@ -1,0 +1,233 @@
+@import url('https://fonts.googleapis.com/css?family=Quicksand:300,400,500,700&display=swap');
+:root {
+    --black: #000;
+    --orange: #ff8a0e;
+    --gray: #404040;
+    --lightgray: #f3f3f3;
+    --white: #fff;
+    --padding: 70px 0;
+}
+
+/***************************************             BASIC STYLES 
+***************************************/
+
+body{
+    font-family: 'Quicksand', sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    color:var(--gray);
+}
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+.container{
+    width:70%;
+    margin: auto;
+}
+
+.container::after{
+    content:"";
+    clear: both;
+    display: block; 
+}
+
+button{
+    background: var(--orange);
+    color: var(--white);
+    padding: 15px 50px;
+    text-transform: uppercase;
+    font-size: .9rem;
+    letter-spacing: 1px;
+    margin-top:20px;
+    border: none; 
+}
+
+button:hover{
+    cursor:pointer;
+    background: var(--gray);
+    transition: .4s ease;
+}
+
+/***************************************             HEADER 
+***************************************/
+
+header{
+    background-image: url(img/header.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 60vh;
+    border-bottom: 20px solid rgba(0,0,0,.5); 
+}
+
+header h1{
+    background: var(--black);
+    display:inline-block;
+    color: var(--white);
+    padding: 15px 50px;
+    margin-top:10%;
+    margin-left: 10%;
+    margin-bottom: 10px;
+    font-size: 2.8rem;  
+}
+
+header nav{
+    background: var(--orange);
+    display: inline-block;
+    padding: 5px 30px;
+    margin-left: 10%;   
+}
+
+header nav ul li{
+    display: inline-block;
+    padding: 5px 30px;   
+}
+
+header nav ul li a{
+    text-decoration: none;
+    color:var(--white);
+}
+
+/***************************************             ABOUT
+***************************************/
+
+h2{
+    text-align: center;
+    font-size: 2rem;
+}
+
+h2::after{
+    content: "";
+    display: block;
+    width:100px;
+    height: 2px;
+    background: var(--orange);
+    margin: 20px auto;
+}
+
+
+.about{
+    background: var(--lightgray);
+    padding: var(--padding);
+    text-align: center;  
+}
+
+.about h2{
+    font-size: 2.8rem;
+    padding-bottom: 30px;
+}
+
+/***************************************             SERVICES
+***************************************/
+.services{
+    padding: var(--padding);
+
+}
+
+.services article{
+    float:left;
+    width:33.33%;
+    text-align: center;
+    padding: 0px 30px;
+    line-height: 1.8;  
+}
+
+.services h3{
+    font-size: 1.4rem;
+}
+
+/* Prodcuts */
+.products{
+    background: var(--padding);
+    background: var(---lightgray); 
+}
+
+.products img{
+    width:100%;
+    height:auto;
+}
+
+.products article{
+    width:25%;
+    float:left;
+    padding: 30px;
+}
+
+.products h5{
+    font-size: 1.5rem;
+    padding: 15px 0px;
+}
+
+/***************************************             FOOTER 
+***************************************/
+
+footer{
+    text-align: center;
+    padding: var(--padding);
+    background: var(--gray);
+    color:var(--white);  
+}
+
+footer .fa-heart{
+    color:red;
+}
+
+footer .fab{
+    color:var(--white);
+    padding: 10px;
+    background: var(--orange);
+    margin: 10px;
+}
+
+/***************************************             RESPONSIVE 
+***************************************/
+@media(max-width: 768px) {
+    
+    .container{
+        width: 90%;
+    }
+    
+    header h1{
+        font-size: 2rem;
+    }
+    
+    header {
+        border-bottom: 10px solid rgba(0,0,0,.5);
+    }
+    
+    header nav{
+    background: var(--orange);
+    display: inline-block;
+    padding: 5px ;
+    margin-left: 10%;
+    }
+    
+    header nav ul li{
+    padding: 10px;
+    
+    }
+    
+    .about h2{
+        font-size: 2rem;
+    }
+    
+    h2 {
+        font-size: 1.8rem;
+    }
+    
+    
+    .services article{
+        width:100%;
+        margin-bottom: 40px;
+    }
+    
+    
+    .products article{
+        width:100%
+    }
+    
+}
